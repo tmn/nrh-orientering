@@ -238,11 +238,15 @@ function App() {
         <div className="header-container">
           <h1>Orienteringsprøve</h1>
           <p>
-            Start ved Grønmo Utfartsparkering. Punktorienteringene viser punkter
-            i et Google Maps. Når du tror du er på rett sted kan du lese
-            koordinatene ut fra eget kart og skrive det inn. Koordinatene er på
-            formaet ABC XYZ (feks. 053 354). Ved rett rett input vil svaret
-            dukke opp under og boksen vise grønn ramme.
+            Start ved{" "}
+            <a href="https://maps.app.goo.gl/8HXtiaBZogD6uqfu9">
+              Grønmo Utfartsparkering
+            </a>
+            . Punktorienteringene viser punkter i et Google Maps. Når du tror du
+            er på rett sted kan du lese koordinatene ut fra eget kart og skrive
+            det inn. Koordinatene er på formaet ABC XYZ (feks. 053 354). Ved
+            rett rett input vil svaret dukke opp under og boksen vise grønn
+            ramme.
           </p>
 
           <p>
