@@ -18,6 +18,7 @@ const tasks = [
     title: "Punktorientering 2",
     description: "...",
     answer: "055 358",
+    next: "053 363",
     maps_url: "https://maps.app.goo.gl/jdh1ykFsogPgCTcZ8",
     type: TaskType.QUESTION,
   },
@@ -69,6 +70,14 @@ function AnswerCorrect(task) {
   return (
     <div className={`answer-correct`}>
       <p>Fasit: {task.answer}</p>
+
+      {task.next ? (
+        <p>
+          Du skal videre til <strong>{task.next}</strong>
+        </p>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
