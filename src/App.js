@@ -237,6 +237,23 @@ function App() {
       <header className="header">
         <div className="header-container">
           <h1>Orienteringsprøve</h1>
+          <p>
+            Start ved Grønmo Utfartsparkering. Punktorienteringene viser punkter
+            i et Google Maps. Når du tror du er på rett sted kan du lese
+            koordinatene ut fra eget kart og skrive det inn. Koordinatene er på
+            formaet ABC XYZ (feks. 053 354). Ved rett rett input vil svaret
+            dukke opp under og boksen vise grønn ramme.
+          </p>
+
+          <p>
+            Du kan når som helst vise svaret ved å trykke på "Se fasit", og gå
+            videre.
+          </p>
+
+          <p>
+            Fra orientering 4 til 5 er jeg usikker på hvordan stien går. Tror
+            den går i grei terreng. Hvis den er dust kan du hoppe rett til 6.
+          </p>
         </div>
       </header>
       <div className="container">
