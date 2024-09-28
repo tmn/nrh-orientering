@@ -149,7 +149,9 @@ function TaskQuestion(task) {
         <div>
           <p>
             Orienter deg til dette punktet på kartet og les av koordinater:{" "}
-            <a href={`${task.maps_url}`}>Google Maps Pin</a>
+            <a href={`${task.maps_url}`} target="_blank" rel="noreferrer">
+              Google Maps Pin
+            </a>
           </p>
           <div>
             <input
@@ -206,7 +208,10 @@ function TaskNoQuestion(task) {
         <div className="answer-general">
           <p>
             Dette var {task.answer}. Se i{" "}
-            <a href={`${task.maps_url}`}>Google Maps</a>.
+            <a href={`${task.maps_url}`} target="_blank" rel="noreferrer">
+              Google Maps
+            </a>
+            .
           </p>
           {task.next ? (
             <p>
