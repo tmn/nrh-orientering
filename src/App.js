@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./css/main.css";
 
 const TaskType = {
   QUESTION: "Question",
@@ -68,7 +68,7 @@ const tasks = [
 
 function AnswerCorrect(task) {
   return (
-    <div className={`answer-correct`}>
+    <div className={`answer answer--correct`}>
       <p>Fasit: {task.answer}</p>
 
       {task.next ? (
@@ -84,7 +84,7 @@ function AnswerCorrect(task) {
 
 function AnswerWrong(task) {
   return (
-    <div className={`answer-wrong`}>
+    <div className={`answer answer--wrong`}>
       <p>Svaret var dessverre feil. Prøv igjen</p>
     </div>
   );
@@ -143,16 +143,21 @@ function TaskQuestion(task) {
   }
 
   return (
-    <div className="item">
+    <div className="task-item">
       <div>
         <h2>{task.title}</h2>
         <div>
-          <p>
-            Orienter deg til dette punktet på kartet og les av koordinater:{" "}
+          <p>Orienter deg til dette punktet på kartet og les av koordinater:</p>
+          <div class="row taks-info">
+            <img
+              className="task-info-pin"
+              src="/assets/pin.svg"
+              alt="Map pin"
+            />
             <a href={`${task.maps_url}`} target="_blank" rel="noreferrer">
-              Google Maps Pin
+              Se punkt i kart
             </a>
-          </p>
+          </div>
           <div>
             <input
               type="text"
@@ -199,17 +204,17 @@ function TaskNoQuestion(task) {
   }
 
   return (
-    <div className="item">
-      <h2>{task.title}</h2>
+    <div className="task-item">
+      <h2 className="task-header">{task.title}</h2>
       <div>
         <button onClick={handle_show_answer}>Kommet fram? Se svar</button>
       </div>
       {showAnswer ? (
-        <div className="answer-general">
+        <div className="answer answer--general">
           <p>
-            Dette var {task.answer}. Se i{" "}
+            Dette var {task.answer}.{" "}
             <a href={`${task.maps_url}`} target="_blank" rel="noreferrer">
-              Google Maps
+              Se i kart
             </a>
             .
           </p>
@@ -228,10 +233,11 @@ function TaskNoQuestion(task) {
   );
 }
 
-function Task(task) {
+function TaskItem(task) {
   if (task.type === TaskType.QUESTION) {
     return <TaskQuestion {...task} />;
   }
+
   return <TaskNoQuestion {...task} />;
 }
 
@@ -241,9 +247,9 @@ function App() {
       <div className="topBar"></div>
       <header className="header">
         <div className="header-container">
-          <h1>Orienteringsprøve</h1>
+          <h1>Orientering i Sørmarka</h1>
           <p>
-            Start ved{" "}
+            Løypa er på ca 8 km. Start ved{" "}
             <a href="https://maps.app.goo.gl/8HXtiaBZogD6uqfu9">
               Grønmo Utfartsparkering
             </a>
@@ -261,7 +267,7 @@ function App() {
       </header>
       <div className="container">
         {tasks.map((task, id) => (
-          <Task key={`task-${id}`} {...task} />
+          <TaskItem key={`task-${id}`} {...task} />
         ))}
       </div>
     </>

@@ -1,0 +1,124 @@
+/* TopBar
+-----------------------------------------------------------------------------*/
+
+.topBar {
+  height: 15px;
+  width: 100%;
+  background-color: rgba(10, 40, 80, 1);
+}
+
+/* Headings
+-----------------------------------------------------------------------------*/
+h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+  background: #fff;
+  padding: 25px 0;
+}
+
+.header-container {
+  max-width: var(--t-content-width-sm);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Input
+-----------------------------------------------------------------------------*/
+
+input[type="text"] {
+  padding: 10px 10px;
+  font-size: 14px;
+  min-width: 250px;
+  width: 100%;
+  border: 1px solid #aaa;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: var(--t-border-radius);
+}
+
+/* Button
+-----------------------------------------------------------------------------*/
+
+button {
+  padding: 14px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: var(--t-border-radius);
+  cursor: pointer;
+  display: block;
+  margin: 10px 0;
+}
+
+.btn-prim {
+  background-color: var(--t-color-blue);
+  color: #fff;
+}
+
+.btn-sec {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.button-group--main {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.button-group-btn {
+  flex-grow: 2;
+}
+
+.button-group-btn--small {
+  flex-grow: 1;
+}
+
+.task-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: var(--t-border-radius);
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+.taks-info {
+  margin-bottom: 15px;
+}
+
+.task-info-pin {
+  width: 10px;
+}
+
+.answer {
+  border-radius: var(--t-border-radius);
+  padding: 15px;
+  color: #fff;
+}
+
+.answer--general {
+  background-color: #222;
+}
+.answer--general a {
+  color: var(--t-color-blue-light);
+}
+.answer--correct {
+  background-color: rgb(28, 143, 49);
+}
+
+.answer--wrong {
+  background-color: #d01c1c;
+}
