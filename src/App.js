@@ -269,6 +269,12 @@ function App() {
             Du kan når som helst vise svaret ved å trykke på "Se fasit", og gå
             videre.
           </p>
+          <p>
+            Se{" "}
+            <a href="https://cava.tmn.io/nrh/kart-gronmo.pdf">
+              PDF av fysisk kart.
+            </a>
+          </p>
         </div>
       </header>
       <div className="container">
