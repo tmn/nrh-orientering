@@ -253,10 +253,16 @@ function App() {
             <a href="https://maps.app.goo.gl/8HXtiaBZogD6uqfu9">
               Grønmo Utfartsparkering
             </a>
-            . Punktorienteringene viser punkter i et Google Maps. Når du tror du
+            . Punktorienteringene viser et punkt i Google Maps. Når du tror du
             er på rett sted kan du lese koordinatene ut fra eget kart og skrive
             det inn. Koordinatene er på formaet ABC XYZ (feks. 053 354). Ved
             rett rett input vil svaret dukke opp under i en grønn boks.
+          </p>
+
+          <p>
+            Ved siste punktorientering vil du få koordinater til neste post. Her
+            orienterer du deg fram til der du tror det er før du ev. sjekker
+            fasit for å få neste punkt.
           </p>
 
           <p>
