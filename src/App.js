@@ -148,7 +148,7 @@ function TaskQuestion(task) {
         <h2>{task.title}</h2>
         <div>
           <p>Orienter deg til dette punktet på kartet og les av koordinater:</p>
-          <div class="row taks-info">
+          <div className="row taks-info">
             <img
               className="task-info-pin"
               src="/assets/pin.svg"
