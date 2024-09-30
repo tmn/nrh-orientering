@@ -10,7 +10,7 @@ const tasks = [
   {
     title: "Punktorientering 1",
     description: "...",
-    answer: "053 355",
+    answer: "053 356",
     maps_url: "https://maps.app.goo.gl/a1VGvzRdjzW5kLwx7",
     type: TaskType.QUESTION,
   },
