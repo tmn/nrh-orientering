@@ -249,7 +249,7 @@ function App() {
         <div className="header-container">
           <h1>Orientering i Sørmarka</h1>
           <p>
-            Løypa er på ca 8 km. Start ved{" "}
+            Løypa er på ca 6 km. Start ved{" "}
             <a href="https://maps.app.goo.gl/8HXtiaBZogD6uqfu9">
               Grønmo Utfartsparkering
             </a>
