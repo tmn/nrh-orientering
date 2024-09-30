@@ -247,7 +247,7 @@ function App() {
       <div className="topBar"></div>
       <header className="header">
         <div className="header-container">
-          <h1>Orientering i Sørmarka</h1>
+          <h1>Orientering ved Grønmo</h1>
           <p>
             Løypa er på ca 6 km. Start ved{" "}
             <a href="https://maps.app.goo.gl/8HXtiaBZogD6uqfu9">
